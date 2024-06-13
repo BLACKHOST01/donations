@@ -3,10 +3,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <title>Django Tailwind</title>
+    <title>LWC</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
 		{% tailwind_css %}
 		{% fontawesome_6_static %}
 		{% load static %}
@@ -20,6 +23,34 @@
 			{% endblock nav %}
 		</div>
 
-		
+		<div class="text-pink p-9 h-[70vh] bg-no-repeat bg-blend-soft-light bg-center bg-contain bg-gray-900 mix-blend-color-dodge " style="background-image: url({% static 'images/lwc.png' %});">
+			<div class="py-28">
+				{% block main%}
+					<div class="flex flex-col justify-center gap-9 text-lg items-center align-middle">
+						<span>
+							<h1 class="text-2xl uppercase">living with cancer isn't death</h1>
+						</span>
+						<span>
+							<p>
+								cancer is like a relentless foe, creeping into lives unexpectedly. yet, amidst its daunting presence, there's always the flicker of hope,
+								<br/>fueled by advancements in medicine, research, and the resilience of patients. 
+								saving a caner patients is like reclaiming a ray of light from the darkness,
+								<br/> a testament to the power of science, love, and human spiirt interwined.
+							</p>
+						</span>
+					</div>
+
+				{% endblock main%}
+			</div>
+		</div>
+		<div>
+			<footer>
+				<h1>akdjf</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia dolorem optio vero fuga, illum ut aliquid nam dolore et atque cumque hic eum sint iure error culpa quaerat tempora impedit.
+				</p>
+			</footer>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 	</body>
 </html>
